@@ -2,6 +2,11 @@
 
 This repository is to show components created from my idea.
 
+## Features and Highlights
+
+- Accessibility-Focused: Prioritizing accessibility to ensure a seamless experience for all users, including those with disabilities.
+- Pure CSS: Written predominantly in pure CSS, aiming for a lightweight and efficient design, and reusability.
+
 ## Getting started
 
 ```bash
