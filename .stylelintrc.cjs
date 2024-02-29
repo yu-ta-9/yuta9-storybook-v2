@@ -6,7 +6,7 @@ module.exports = {
   reportNeedlessDisables: true,
   cache: true,
   rules: {
-    'unit-allowed-list': ['px', '%', 'rem', 'ms'],
+    'unit-allowed-list': ['px', '%', 'rem', 'ms', 'em', 'deg', 'vh', 'vw', 's', 'fr', 'ch', 'vmin', 'vmax'],
     'import-notation': 'string',
   },
   ignoreFiles: ['src/styles/reset.css', 'src/stories/**'],
