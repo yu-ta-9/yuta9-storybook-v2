@@ -1,0 +1,11 @@
+.folder-tree {
+  position: relative;
+  height: 480px;
+  border: 2px solid var(--color-dark);
+
+  > .tree {
+    position: absolute;
+    inset: 0;
+    overflow-y: scroll;
+  }
+}

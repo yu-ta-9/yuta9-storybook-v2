@@ -91,3 +91,13 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+/* --- my custom --- */
+
+ul[class],
+ol[class] {
+  text-indent: 0;
+  list-style-type: 0;
+  margin: 0;
+  padding: 0;
+}
