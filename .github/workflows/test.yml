@@ -63,3 +63,6 @@ jobs:
 
       - name: type-check
         run: pnpm run ts:test
+
+      - name: unit test
+        run: pnpm run test
