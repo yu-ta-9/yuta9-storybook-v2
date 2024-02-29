@@ -1,0 +1,7 @@
+coverage
+node_modules
+pnpm-lock.yaml
+pull_request_template.md
+build
+storybook-static
+src/generated

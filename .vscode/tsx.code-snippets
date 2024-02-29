@@ -1,0 +1,18 @@
+{
+  "tsx": {
+    "scope": "typescriptreact",
+    "prefix": "tsx",
+    "body": [
+      "import type { FC } from 'react';",
+      "",
+      "import styles from './index.module.scss';",
+      "",
+      "type Props = object;",
+      "",
+      "export const ${1:componentName}: FC<Props> = ({}) => {",
+      "\treturn <div className={styles['']}></div>;",
+      "};"
+    ],
+    "description": "Basic tsx file format."
+  }
+}

@@ -1,0 +1,20 @@
+:root {
+  /* color */
+  --color-main: #01ff76;
+  --color-sub: #494949;
+  --color-dark: #121212;
+  --color-light: #fff;
+  --color-red: ##e92a2a;
+  --color-orange: #f3991c;
+  --color-green: #03a738;
+  --color-blue: #355cd9;
+  --color-yellow: #f6c000;
+
+  /* font-size */
+  --font-size-base: 1rem;
+
+  /* font-weight */
+  --font-weight-normal: 300;
+
+  /* z-index */
+}

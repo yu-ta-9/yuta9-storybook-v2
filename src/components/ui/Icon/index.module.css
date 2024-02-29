@@ -1,0 +1,15 @@
+.svg-main {
+  color: var(--color-main);
+}
+
+.svg-sub {
+  color: var(--color-sub);
+}
+
+.svg-dark {
+  color: var(--color-dark);
+}
+
+.svg-light {
+  color: var(--color-light);
+}
