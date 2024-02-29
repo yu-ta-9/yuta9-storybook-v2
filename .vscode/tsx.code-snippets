@@ -11,8 +11,8 @@
       "",
       "export const ${1:componentName}: FC<Props> = ({}) => {",
       "\treturn <div className={styles['']}></div>;",
-      "};"
+      "};",
     ],
-    "description": "Basic tsx file format."
-  }
+    "description": "Basic tsx file format.",
+  },
 }

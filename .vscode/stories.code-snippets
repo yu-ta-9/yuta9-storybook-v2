@@ -22,9 +22,9 @@
       "export const Default: Story = {",
       "\targs: {",
       "\t}",
-      "};"
+      "};",
     ],
-    "description": "Basic stories file format."
+    "description": "Basic stories file format.",
   },
   "stories-ex": {
     "scope": "javascriptreact, typescriptreact",
@@ -40,8 +40,8 @@
       "",
       "export const Template: ComponentStory<typeof ${1:componentName}> = (_args) => {",
       "\treturn <></>;",
-      "};"
+      "};",
     ],
-    "description": "Basic stories file format."
-  }
+    "description": "Basic stories file format.",
+  },
 }
