@@ -33,5 +33,7 @@ export const Icon: FC<Props> = ({ name, size, colorType = 'dark' }) => {
       return <File {...iconProps} />;
     case 'folder':
       return <Folder {...iconProps} />;
+    case 'asterisk':
+      return <Asterisk {...iconProps} />;
   }
 };
