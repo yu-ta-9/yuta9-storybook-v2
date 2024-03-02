@@ -4,7 +4,7 @@ import { memo, useState } from 'react';
 import commonStyles from '@/components/FolderTree/common/index.module.css';
 import { FolderTreeItem } from '@/components/FolderTree/items';
 import styles from '@/components/FolderTree/items/Folder/index.module.css';
-import { DivButton } from '@/components/ui/DivButton';
+import { DivButton } from '@/components/tools/DivButton';
 import { Icon } from '@/components/ui/Icon';
 
 import type { File, Folder } from '@/components/FolderTree/common/type';

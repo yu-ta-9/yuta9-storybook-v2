@@ -8,6 +8,9 @@ type Props = {
   onClick: () => void;
 } & ComponentProps<'div'>;
 
+/**
+ * TODO: 振る舞いテストを書いてみる
+ */
 const _DivButton: FC<Props> = ({ children, tabIndex, onClick, ...divProps }) => {
   const handleKeyDown = useCallback(
     (e: React.KeyboardEvent<HTMLDivElement>): void => {
