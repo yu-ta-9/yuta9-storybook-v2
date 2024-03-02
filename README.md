@@ -18,8 +18,8 @@ pnpm build-storybook # build
 ## Tech
 
 - React
-- typescript
-- css modules
+- TypeScript
+- CSS Modules
 - Storybook
 
 ## Asset
