@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronUp, Folder, File } from '@/components/ui/Icon/generated';
+import { ChevronDown, ChevronUp, Folder, File, Asterisk } from '@/components/ui/Icon/generated';
 import styles from '@/components/ui/Icon/index.module.css';
 
 import type { IconColorType, IconName } from '@/components/ui/Icon/type';
@@ -15,6 +15,7 @@ const COLOR_CLASSES: { [key in IconColorType]: string } = {
   sub: styles.svgSub,
   dark: styles.svgDark,
   light: styles.svgLight,
+  red: styles.svgRed,
 } as const;
 
 export const Icon: FC<Props> = ({ name, size, colorType = 'dark' }) => {
@@ -33,5 +34,7 @@ export const Icon: FC<Props> = ({ name, size, colorType = 'dark' }) => {
       return <File {...iconProps} />;
     case 'folder':
       return <Folder {...iconProps} />;
+    case 'asterisk':
+      return <Asterisk {...iconProps} />;
   }
 };

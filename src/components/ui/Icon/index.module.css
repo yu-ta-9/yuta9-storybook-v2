@@ -13,3 +13,7 @@
 .svg-light {
   color: var(--color-light);
 }
+
+.svg-red {
+  color: var(--color-red);
+}
