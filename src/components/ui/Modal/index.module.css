@@ -1,0 +1,17 @@
+.modal {
+  position: absolute;
+  inset: 40px;
+  padding: 20px;
+  overflow: auto;
+  background: rgb(255 255 255);
+  border: 1px solid rgb(204 204 204);
+  border-radius: 4px;
+  outline: none;
+  box-shadow: var(--box-shadow);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-sub20);
+}
