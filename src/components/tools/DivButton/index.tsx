@@ -1,5 +1,7 @@
 import { memo, useCallback } from 'react';
 
+import styles from '@/components/tools/DivButton/index.module.css';
+
 import type { ComponentProps, FC, ReactNode } from 'react';
 
 type Props = {
@@ -20,7 +22,14 @@ const _DivButton: FC<Props> = ({ children, tabIndex, onClick, ...divProps }) => 
   );
 
   return (
-    <div {...divProps} tabIndex={tabIndex} role='button' onClick={onClick} onKeyDown={handleKeyDown}>
+    <div
+      {...divProps}
+      className={styles.divButton}
+      tabIndex={tabIndex}
+      role='button'
+      onClick={onClick}
+      onKeyDown={handleKeyDown}
+    >
       {children}
     </div>
   );
