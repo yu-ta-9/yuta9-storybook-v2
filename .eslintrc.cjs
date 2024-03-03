@@ -9,9 +9,9 @@ module.exports = {
     'plugin:storybook/recommended',
     'prettier',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['dist', 'node_modules', 'public'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh', '@typescript-eslint', 'react', 'import', 'unused-imports'],
+  plugins: ['react-refresh', '@typescript-eslint', 'react', 'import', 'unused-imports', 'jest-dom', 'testing-library'],
   rules: {
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     // import
@@ -49,6 +49,10 @@ module.exports = {
         argsIgnorePattern: '^_',
       },
     ],
+  },
+  overrides: {
+    files: ['**/__tests__/**/*.+(ts|tsx|js)', '**/?(*.)+(spec|test).+(ts|tsx|js)'],
+    extends: ['plugin:jest-dom/recommended', 'plugin:testing-library/react'],
   },
   settings: {
     'import/resolver': {
