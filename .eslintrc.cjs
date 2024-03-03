@@ -7,11 +7,21 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:storybook/recommended',
+    'plugin:vitest/recommended',
     'prettier',
   ],
   ignorePatterns: ['dist', 'node_modules', 'public'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh', '@typescript-eslint', 'react', 'import', 'unused-imports', 'jest-dom', 'testing-library'],
+  plugins: [
+    'react-refresh',
+    '@typescript-eslint',
+    'react',
+    'import',
+    'unused-imports',
+    'vitest',
+    'jest-dom',
+    'testing-library',
+  ],
   rules: {
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     // import
@@ -49,11 +59,11 @@ module.exports = {
         argsIgnorePattern: '^_',
       },
     ],
+    // vitest
+    'vitest/consistent-test-it': ['error', { fn: 'test' }],
+    'vitest/require-top-level-describe': ['error'],
   },
-  overrides: {
-    files: ['**/__tests__/**/*.+(ts|tsx|js)', '**/?(*.)+(spec|test).+(ts|tsx|js)'],
-    extends: ['plugin:jest-dom/recommended', 'plugin:testing-library/react'],
-  },
+  overrides: [],
   settings: {
     'import/resolver': {
       node: {

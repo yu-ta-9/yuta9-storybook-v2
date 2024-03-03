@@ -1,8 +1,8 @@
 import { memo, useCallback } from 'react';
 
-import type { ComponentProps, FC, ReactNode } from 'react';
-
 import styles from '@/components/tools/DivButton/index.module.css';
+
+import type { ComponentProps, FC, ReactNode } from 'react';
 
 type Props = {
   children: ReactNode;
