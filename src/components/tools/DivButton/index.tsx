@@ -2,15 +2,14 @@ import { memo, useCallback } from 'react';
 
 import type { ComponentProps, FC, ReactNode } from 'react';
 
+import styles from '@/components/tools/DivButton/index.module.css';
+
 type Props = {
   children: ReactNode;
   tabIndex: number;
   onClick: () => void;
 } & ComponentProps<'div'>;
 
-/**
- * TODO: 振る舞いテストを書いてみる
- */
 const _DivButton: FC<Props> = ({ children, tabIndex, onClick, ...divProps }) => {
   const handleKeyDown = useCallback(
     (e: React.KeyboardEvent<HTMLDivElement>): void => {
@@ -23,7 +22,14 @@ const _DivButton: FC<Props> = ({ children, tabIndex, onClick, ...divProps }) => 
   );
 
   return (
-    <div {...divProps} tabIndex={tabIndex} role='button' onClick={onClick} onKeyDown={handleKeyDown}>
+    <div
+      {...divProps}
+      className={styles.divButton}
+      tabIndex={tabIndex}
+      role='button'
+      onClick={onClick}
+      onKeyDown={handleKeyDown}
+    >
       {children}
     </div>
   );
