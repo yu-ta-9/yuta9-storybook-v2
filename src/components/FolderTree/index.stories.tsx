@@ -30,7 +30,18 @@ export const Default: Story = {
         type: 'folder',
         id: 2,
         name: 'Folder2',
-        data: [{ type: 'file', id: 21, name: 'File2-1' }],
+        data: [
+          { type: 'file', id: 21, name: 'File2-1' },
+          {
+            type: 'folder',
+            id: 22,
+            name: 'Folder2-2',
+            data: [
+              { type: 'file', id: 221, name: 'File2-2-1' },
+              { type: 'file', id: 222, name: 'File2-2-2' },
+            ],
+          },
+        ],
       },
       { type: 'file', id: 3, name: 'File3' },
       { type: 'file', id: 4, name: 'File4' },

@@ -8,5 +8,5 @@ export type Folder = {
   type: 'folder';
   id: number;
   name: string;
-  data: File[];
+  data: (File | Folder)[];
 };
