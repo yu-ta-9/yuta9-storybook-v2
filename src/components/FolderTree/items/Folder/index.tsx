@@ -41,7 +41,6 @@ const _FolderItem: FC<FolderItemProps> = ({ id, name, data, nestNum }) => {
 
         {isFolderOpen ? <Icon name='chevronUp' size={20} /> : <Icon name='chevronDown' size={20} />}
       </DivButton>
-      {/* TODO: アクセシビリティ */}
       <ul
         className={clsx(styles.folder, isFolderOpen ? styles.open : styles.close)}
         style={{ display: isFolderOpen ? 'block' : 'none' }}

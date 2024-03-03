@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { memo, useCallback } from 'react';
 
 import styles from '@/components/tools/DivButton/index.module.css';
@@ -24,7 +25,7 @@ const _DivButton: FC<Props> = ({ children, tabIndex, onClick, ...divProps }) => 
   return (
     <div
       {...divProps}
-      className={styles.divButton}
+      className={clsx(styles.divButton, divProps.className)}
       tabIndex={tabIndex}
       role='button'
       onClick={onClick}
