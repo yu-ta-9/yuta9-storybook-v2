@@ -1,11 +1,17 @@
 :root {
   /* color */
   --color-main: #01ff76;
+  --color-main80: #01ff7699;
+  --color-main50: #01ff7666;
+  --color-main20: #01ff7633;
   --color-sub: #494949;
   --color-sub20: #49494933;
   --color-dark: #121212;
   --color-light: #fff;
   --color-red: #e92a2a;
+  --color-ref80: #e92a2a99;
+  --color-red50: #e92a2a66;
+  --color-red20: #e92a2a33;
   --color-orange: #f3991c;
   --color-green: #03a738;
   --color-blue: #355cd9;
