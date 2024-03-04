@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "ci:check": "run-z lint:js lint:css format ts:test test",
     "dev": "run-z server, build:css:watch",
     "server": "vite",
     "build:watch": "vite build --mode=development --watch",
