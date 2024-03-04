@@ -23,6 +23,7 @@ export const Icon: FC<Props> = ({ name, size, colorType = 'dark' }) => {
     width: size,
     height: size,
     className: COLOR_CLASSES[colorType],
+    'aria-hidden': true,
   };
 
   switch (name) {
