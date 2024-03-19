@@ -1,0 +1,43 @@
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  > legend {
+    display: flex;
+    gap: var(--spacing-2);
+    align-items: center;
+
+    > .required {
+      padding: var(--spacing-1);
+      color: var(--color-light);
+      background-color: var(--color-red);
+      border-radius: 4px;
+    }
+  }
+
+  > .description {
+    color: var(--color-sub);
+  }
+
+  > .group {
+    display: flex;
+    gap: var(--spacing-1);
+
+    &[data-direction='column'] {
+      flex-direction: column;
+    }
+
+    &[data-direction='row'] {
+      flex-direction: row;
+    }
+  }
+
+  > .error-text {
+    color: var(--color-red);
+  }
+}
