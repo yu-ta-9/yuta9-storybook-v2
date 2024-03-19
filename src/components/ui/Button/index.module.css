@@ -36,8 +36,8 @@
 
     &:focus,
     &:focus-visible {
-      /* background-color: var(--color-main80);
-      border-color: var(--color-main80); */
+      background-color: var(--color-main80);
+      border-color: var(--color-main80);
     }
 
     &:active {
@@ -52,8 +52,8 @@
     border-color: var(--color-red);
 
     &:hover {
-      /* background-color: var(--color-red80);
-      border-color: var(--color-red80); */
+      background-color: var(--color-red80);
+      border-color: var(--color-red80);
     }
 
     &:focus,
