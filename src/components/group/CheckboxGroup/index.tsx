@@ -2,6 +2,7 @@ import { useId, type FC, useCallback } from 'react';
 
 import styles from '@/components/group/CheckboxGroup/index.module.css';
 import { Checkbox } from '@/components/ui/Checkbox';
+import { Icon } from '@/components/ui/Icon';
 
 import type { ChangeEvent } from 'react';
 
@@ -53,8 +54,7 @@ export const CheckboxGroup: FC<Props> = ({
       <legend>
         {label}
 
-        {/* TODO: バッジのコンポーネント化 */}
-        {required && <span className={styles.required}>必須</span>}
+        {required && <Icon name='asterisk' size={8} colorType='red' />}
       </legend>
 
       {!!description && <p className={styles.description}>{description}</p>}
