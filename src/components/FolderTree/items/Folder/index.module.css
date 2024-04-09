@@ -9,7 +9,7 @@
 
   @media (any-hover: hover) {
     &:hover {
-      background-color: var(--color-main);
+      background-color: var(--md-sys-color-primary);
     }
   }
 

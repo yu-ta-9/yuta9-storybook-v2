@@ -17,9 +17,9 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     ariaLabel: 'Go down',
-    iconName: 'chevronDown',
+    name: 'chevronDown',
     size: 24,
-    colorType: 'dark',
+    theme: 'primary',
     onClick: () => alert('Clicked!!'),
   },
 };

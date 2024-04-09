@@ -1,19 +1,23 @@
-.svg-main {
-  color: var(--color-main);
+.svg-primary {
+  color: var(--md-sys-color-primary);
 }
 
-.svg-sub {
-  color: var(--color-sub);
+.svg-on-primary {
+  color: var(--md-sys-color-on-primary);
 }
 
-.svg-dark {
-  color: var(--color-dark);
+.svg-error {
+  color: var(--md-sys-color-error);
 }
 
-.svg-light {
-  color: var(--color-light);
+.svg-on-error {
+  color: var(--md-sys-color-on-error);
 }
 
-.svg-red {
-  color: var(--color-red);
+.svg-surface {
+  color: var(--md-sys-color-surface);
+}
+
+.svg-on-surface {
+  color: var(--md-sys-color-on-surface);
 }

@@ -1,7 +1,7 @@
 .folder-tree {
   position: relative;
   height: 480px;
-  border: 2px solid var(--color-dark);
+  border: 2px solid var(--md-sys-color-outline);
 
   > .tree {
     position: absolute;

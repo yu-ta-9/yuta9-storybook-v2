@@ -1,20 +1,17 @@
 import { Icon } from '@/components/ui/Icon';
 import styles from '@/components/ui/IconButton/index.module.css';
 
-import type { IconColorType, IconName } from '@/components/ui/Icon/type';
 import type { ComponentProps, FC } from 'react';
 
 type Props = {
   ariaLabel: string;
-  iconName: IconName;
-  size: number;
-  colorType?: IconColorType;
-} & ComponentProps<'button'>;
+} & ComponentProps<typeof Icon> &
+  ComponentProps<'button'>;
 
-export const IconButton: FC<Props> = ({ ariaLabel, iconName, size, colorType = 'dark', ...buttonProps }) => {
+export const IconButton: FC<Props> = ({ ariaLabel, name, size, theme = 'primary', ...buttonProps }) => {
   return (
     <button {...buttonProps} className={styles.iconButton} aria-label={ariaLabel}>
-      <Icon name={iconName} size={size} colorType={colorType} />
+      <Icon name={name} size={size} theme={theme} />
     </button>
   );
 };

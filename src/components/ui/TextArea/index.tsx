@@ -22,7 +22,7 @@ export const TextArea = forwardRef<HTMLTextAreaElement, Props>(
         <label htmlFor={id}>
           {label}
 
-          {required && <Icon name='asterisk' size={8} colorType='red' />}
+          {required && <Icon name='asterisk' size={8} theme='error' />}
         </label>
         <textarea
           {...textFieldProps}

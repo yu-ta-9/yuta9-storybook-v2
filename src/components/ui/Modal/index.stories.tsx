@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import { Button } from '@/components/ui/Button';
 import { Modal } from '@/components/ui/Modal';
 
 import type { Meta, StoryObj } from '@storybook/react';
@@ -23,16 +24,18 @@ export const Default: Story = {
 
     return (
       <div>
-        <button type='button' onClick={() => setIsOpen(true)}>
-          Open modal
-        </button>
+        <Button theme='primary' label='Open modal' type='button' onClick={() => setIsOpen(true)} disabled={false} />
         <Modal {...args} isOpen={isOpen} onClose={() => setIsOpen(false)}>
           <div>
-            <h2> Modal Body</h2>
+            <h2 style={{ marginBottom: 16 }}> Modal Body</h2>
 
-            <button type='button' onClick={() => setIsOpen(false)} style={{ marginTop: 16 }}>
-              Close modal
-            </button>
+            <Button
+              theme='primary'
+              label='Close modal'
+              type='button'
+              onClick={() => setIsOpen(false)}
+              disabled={false}
+            />
           </div>
         </Modal>
       </div>

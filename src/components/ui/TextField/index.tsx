@@ -22,7 +22,7 @@ export const TextField = forwardRef<HTMLInputElement, Props>(
         <label htmlFor={id}>
           {label}
 
-          {required && <Icon name='asterisk' size={8} colorType='red' />}
+          {required && <Icon name='asterisk' size={8} theme='error' />}
         </label>
         <input
           {...textFieldProps}

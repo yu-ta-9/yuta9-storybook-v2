@@ -1,0 +1,16 @@
+:root {
+  /* font-size */
+  --font-size-base: 1rem;
+
+  /* font-weight */
+  --font-weight-normal: 300;
+  --font-weight-bold: 700;
+
+  /* z-index */
+
+  /* box-shadow */
+  --shadow: 0 0 4px 0 var(--md-sys-color-shadow);
+
+  /* border-radius */
+  --border-radius-m: 16px;
+}
