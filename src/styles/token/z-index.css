@@ -1,4 +1,4 @@
 :root {
   /* z-index */
-  --z-index-toast: 1000;
+  --z-index-toast: 9999;
 }

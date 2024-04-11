@@ -1,5 +1,6 @@
 :root {
   /* spacing */
+  --spacing-0: 0;
   --spacing-1: 4px;
   --spacing-2: 8px;
   --spacing-3: 12px;

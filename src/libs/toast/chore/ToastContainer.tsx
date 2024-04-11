@@ -2,12 +2,14 @@ import { useRef, useState, useLayoutEffect } from 'react';
 
 import { Toast } from '@/components/ui/Toast';
 import { useToastStore } from '@/libs/toast/chore';
+import styles from '@/libs/toast/chore/toast-container.module.css';
 
+import type { ToastState } from '@/components/ui/Toast/type';
 import type { FC, ComponentProps } from 'react';
 
-const ToastWrapper: FC<{ id: string } & Omit<ComponentProps<typeof Toast>, 'isActive'>> = ({ id, message, type }) => {
+const ToastWrapper: FC<{ id: string } & Omit<ComponentProps<typeof Toast>, 'state'>> = ({ id, message, type }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const [isActive, setIsActive] = useState(true);
+  const [state, setState] = useState<ToastState>('entering');
 
   const { remove } = useToastStore();
 
@@ -17,10 +19,14 @@ const ToastWrapper: FC<{ id: string } & Omit<ComponentProps<typeof Toast>, 'isAc
     let timer: NodeJS.Timeout;
     const node = ref.current;
     const onAnimationEnd = () => {
-      if (isActive) {
+      if (state === 'entering') {
         timer = setTimeout(() => {
-          setIsActive(false);
+          setState('exiting');
         }, 3000);
+      } else if (state === 'exiting') {
+        timer = setTimeout(() => {
+          setState('exited');
+        }, 0);
       } else {
         timer = setTimeout(() => {
           remove(id);
@@ -35,16 +41,16 @@ const ToastWrapper: FC<{ id: string } & Omit<ComponentProps<typeof Toast>, 'isAc
         clearTimeout(timer);
       }
     };
-  }, [isActive, id, remove]);
+  }, [id, remove, state]);
 
-  return <Toast ref={ref} type={type} message={message} isActive={isActive} />;
+  return <Toast ref={ref} type={type} message={message} state={state} />;
 };
 
 export const ToastContainer: FC = () => {
   const { snapshot } = useToastStore();
 
   return (
-    <div id='toast-container'>
+    <div id='toast-container' className={styles.toastContainer}>
       {snapshot.map(({ key, message, type }) => (
         <ToastWrapper key={key} id={key} type={type} message={message} />
       ))}

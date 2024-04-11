@@ -10,7 +10,7 @@ import type { ComponentProps } from 'react';
 type Props = {
   type: ToastType;
   message: string;
-  isActive: boolean;
+  state: 'entering' | 'exiting' | 'exited';
 };
 
 const getIconProps = (type: Props['type']): Omit<ComponentProps<typeof Icon>, 'size'> => {
@@ -29,9 +29,14 @@ const getIconProps = (type: Props['type']): Omit<ComponentProps<typeof Icon>, 's
 /**
  * Please use `/libs/toast/useToast.ts` to show a toast.
  */
-export const Toast = forwardRef<HTMLDivElement, Props>(({ type, message, isActive }, ref) => {
+export const Toast = forwardRef<HTMLDivElement, Props>(({ type, message, state }, ref) => {
   return (
-    <div ref={ref} role='alert' data-type={type} className={clsx(styles.toast, isActive ? '' : styles.hide)}>
+    <div
+      ref={ref}
+      role='alert'
+      data-type={type}
+      className={clsx(styles.toast, state === 'exiting' ? styles.hide : state === 'exited' ? styles.vanish : '')}
+    >
       <Icon {...getIconProps(type)} size={24} />
 
       {message}

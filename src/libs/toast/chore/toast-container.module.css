@@ -1,0 +1,6 @@
+.toast-container {
+  position: fixed;
+  top: var(--spacing-4);
+  right: var(--spacing-0);
+  z-index: var(--z-index-toast);
+}
