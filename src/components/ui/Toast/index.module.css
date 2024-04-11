@@ -31,7 +31,7 @@
   overflow: hidden;
   color: var(--color-light);
   background-color: var(--color-dark);
-  border-radius: var(--border-radius-1);
+  border-radius: var(--border-radius-2);
   box-shadow: var(--box-shadow);
   transform: translateX(-50%);
   animation-name: fade-in;
@@ -50,22 +50,6 @@
     width: 4px;
     height: 100%;
     content: '';
-  }
-
-  &[data-type='success']::before {
-    background-color: var(--color-green);
-  }
-
-  &[data-type='error']::before {
-    background-color: var(--color-red);
-  }
-
-  &[data-type='info']::before {
-    background-color: var(--color-blue);
-  }
-
-  &[data-type='warning']::before {
-    background-color: var(--color-yellow);
   }
 
   @media (481px <= width < 768px) {
