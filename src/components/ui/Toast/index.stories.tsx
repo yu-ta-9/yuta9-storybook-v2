@@ -27,7 +27,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Success: Story = {
   args: {
-    isActive: true,
+    state: 'exiting',
     type: 'success',
     message: 'Success message',
   },
@@ -35,7 +35,7 @@ export const Success: Story = {
 
 export const Error: Story = {
   args: {
-    isActive: true,
+    state: 'exiting',
     type: 'error',
     message: 'Error message',
   },
@@ -43,7 +43,7 @@ export const Error: Story = {
 
 export const Info: Story = {
   args: {
-    isActive: true,
+    state: 'exiting',
     type: 'info',
     message: 'Info message',
   },
@@ -51,7 +51,7 @@ export const Info: Story = {
 
 export const Warning: Story = {
   args: {
-    isActive: true,
+    state: 'exiting',
     type: 'warning',
     message: 'Warning message',
   },
@@ -59,7 +59,7 @@ export const Warning: Story = {
 
 export const PlaygroundSample: Story = {
   args: {
-    isActive: true,
+    state: 'entering',
     type: 'success',
     message: 'Success message',
   },
