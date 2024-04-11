@@ -1,7 +1,7 @@
-@import url(token/border-radius.css);
-@import url(token/color.css);
-@import url(token/font-size.css);
-@import url(token/font-weight.css);
-@import url(token/shadow.css);
-@import url(token/spacing.css);
-@import url(token/z-index.css);
+@import 'token/border-radius.css';
+@import 'token/color.css';
+@import 'token/font-size.css';
+@import 'token/font-weight.css';
+@import 'token/shadow.css';
+@import 'token/spacing.css';
+@import 'token/z-index.css';
