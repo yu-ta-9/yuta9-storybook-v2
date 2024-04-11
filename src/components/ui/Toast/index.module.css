@@ -30,34 +30,34 @@
 
 .toast {
   position: relative;
-  transition: all 3000ms ease-out;
   display: flex;
   gap: var(--spacing-2);
   align-items: center;
   min-width: 240px;
   max-width: 50%;
   padding: var(--spacing-4) var(--spacing-6);
+  margin-bottom: var(--spacing-4);
   overflow: hidden;
   color: var(--color-light);
   background-color: var(--color-dark);
   border-radius: var(--border-radius-2);
   box-shadow: var(--box-shadow);
+  transition: all 3000ms ease-out;
   animation-name: fade-in;
   animation-duration: 300ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-  margin-bottom: var(--spacing-4);
 
   &.hide {
     animation-name: fade-out;
   }
 
   &.vanish {
-    animation-name: vanish;
-    transition: all 500ms ease-out;
     right: -100%;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    transition: all 500ms ease-out;
+    animation-name: vanish;
   }
 
   @media (481px <= width < 768px) {
