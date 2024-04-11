@@ -1,0 +1,79 @@
+@keyframes fade-in {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: -22%;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    right: -22%;
+  }
+
+  to {
+    right: -100%;
+  }
+}
+
+.toast {
+  position: fixed;
+  top: 1rem;
+  z-index: var(--z-index-toast);
+  display: flex;
+  gap: var(--spacing-2);
+  align-items: center;
+  min-width: 480px;
+  max-width: 80%;
+  padding: var(--spacing-4) var(--spacing-6);
+  overflow: hidden;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  border-radius: var(--border-radius-1);
+  box-shadow: var(--box-shadow);
+  transform: translateX(-50%);
+  animation-name: fade-in;
+  animation-duration: 300ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+
+  &.hide {
+    animation-name: fade-out;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    content: '';
+  }
+
+  &[data-type='success']::before {
+    background-color: var(--color-green);
+  }
+
+  &[data-type='error']::before {
+    background-color: var(--color-red);
+  }
+
+  &[data-type='info']::before {
+    background-color: var(--color-blue);
+  }
+
+  &[data-type='warning']::before {
+    background-color: var(--color-yellow);
+  }
+
+  @media (481px <= width < 768px) {
+    min-width: 400px;
+  }
+
+  @media (width <= 400px) {
+    min-width: 90%;
+    max-width: 90%;
+  }
+}
