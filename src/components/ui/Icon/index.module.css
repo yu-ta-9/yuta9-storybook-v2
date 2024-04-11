@@ -17,3 +17,15 @@
 .svg-red {
   color: var(--color-red);
 }
+
+.svg-green {
+  color: var(--color-green);
+}
+
+.svg-blue {
+  color: var(--color-blue);
+}
+
+.svg-yellow {
+  color: var(--color-yellow);
+}
