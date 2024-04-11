@@ -27,7 +27,7 @@ const getIconProps = (type: Props['type']): Omit<ComponentProps<typeof Icon>, 's
 };
 
 /**
- * こちらのコンポーネントは`/libs/toast/useToast.ts`の関数を使用して呼び出してください
+ * Please use `/libs/toast/useToast.ts` to show a toast.
  */
 export const Toast = forwardRef<HTMLDivElement, Props>(({ type, message, isActive }, ref) => {
   return (
