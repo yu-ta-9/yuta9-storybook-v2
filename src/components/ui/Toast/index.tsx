@@ -4,13 +4,13 @@ import { forwardRef } from 'react';
 import { Icon } from '@/components/ui/Icon';
 import styles from '@/components/ui/Toast/index.module.css';
 
-import type { ToastType } from '@/components/ui/Toast/type';
+import type { ToastState, ToastType } from '@/components/ui/Toast/type';
 import type { ComponentProps } from 'react';
 
 type Props = {
   type: ToastType;
   message: string;
-  state: 'entering' | 'exiting' | 'exited';
+  state: ToastState;
 };
 
 const getIconProps = (type: Props['type']): Omit<ComponentProps<typeof Icon>, 'size'> => {
