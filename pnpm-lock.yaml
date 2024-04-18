@@ -22,6 +22,9 @@ dependencies:
     version: 3.16.1(react-dom@18.2.0)(react@18.2.0)
 
 devDependencies:
+  '@storybook/addon-a11y':
+    specifier: ^7.6.17
+    version: 7.6.17
   '@storybook/addon-essentials':
     specifier: ^7.6.17
     version: 7.6.17(@types/react-dom@18.2.24)(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
@@ -2880,6 +2883,13 @@ packages:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
     dev: true
 
+  /@storybook/addon-a11y@7.6.17:
+    resolution: {integrity: sha512-UYHJAKQpJMCu4X4O/325UqozYrkhPn2VyQdwPgC+uiOKZvrtni4uRbpOspeyjC0wXH1tDbY8WZvxwvwQryYkpA==}
+    dependencies:
+      '@storybook/addon-highlight': 7.6.17
+      axe-core: 4.9.0
+    dev: true
+
   /@storybook/addon-actions@7.6.17:
     resolution: {integrity: sha512-TBphs4v6LRfyTpFo/WINF0TkMaE3rrNog7wW5mbz6n0j8o53kDN4o9ZEcygSL5zQX43CAaghQTeDCss7ueG7ZQ==}
     dependencies:
@@ -5055,6 +5065,11 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       possible-typed-array-names: 1.0.0
+    dev: true
+
+  /axe-core@4.9.0:
+    resolution: {integrity: sha512-H5orY+M2Fr56DWmMFpMrq5Ge93qjNdPVqzBv5gWK3aD1OvjBEJlEzxf09z93dGVQeI0LiW+aCMIx1QtShC/zUw==}
+    engines: {node: '>=4'}
     dev: true
 
   /babel-core@7.0.0-bridge.0(@babel/core@7.24.0):
