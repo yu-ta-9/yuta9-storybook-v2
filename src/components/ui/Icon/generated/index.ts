@@ -4,4 +4,8 @@ export { default as ChevronDown } from './ChevronDown';
 export { default as ChevronUp } from './ChevronUp';
 export { default as File } from './File';
 export { default as Folder } from './Folder';
+export { default as SquareCheck } from './SquareCheck';
+export { default as SquareMinus } from './SquareMinus';
+export { default as SquareOff } from './SquareOff';
+export { default as Square } from './Square';
 export { default as Tooltip } from './Tooltip';

@@ -1,0 +1,20 @@
+.checkbox-with-custom-icon {
+  display: flex;
+  gap: var(--spacing-2);
+  align-items: center;
+  cursor: pointer;
+
+  &:has(input:focus, input:focus-visible) {
+    outline: auto;
+  }
+
+  > input {
+    all: unset;
+    position: absolute;
+    width: 1px;
+
+    &:disabled + .label {
+      color: var(--color-disabled);
+    }
+  }
+}

@@ -1,4 +1,15 @@
-import { ChevronDown, ChevronUp, Folder, File, Asterisk, AlertSquare } from '@/components/ui/Icon/generated';
+import {
+  Asterisk,
+  AlertSquare,
+  ChevronDown,
+  ChevronUp,
+  File,
+  Folder,
+  Square,
+  SquareCheck,
+  SquareMinus,
+  SquareOff,
+} from '@/components/ui/Icon/generated';
 import styles from '@/components/ui/Icon/index.module.css';
 
 import type { IconColorType, IconName } from '@/components/ui/Icon/type';
@@ -30,6 +41,10 @@ export const Icon: FC<Props> = ({ name, size, colorType = 'dark' }) => {
   };
 
   switch (name) {
+    case 'asterisk':
+      return <Asterisk {...iconProps} />;
+    case 'alert-square':
+      return <AlertSquare {...iconProps} />;
     case 'chevronDown':
       return <ChevronDown {...iconProps} />;
     case 'chevronUp':
@@ -38,9 +53,13 @@ export const Icon: FC<Props> = ({ name, size, colorType = 'dark' }) => {
       return <File {...iconProps} />;
     case 'folder':
       return <Folder {...iconProps} />;
-    case 'asterisk':
-      return <Asterisk {...iconProps} />;
-    case 'alert-square':
-      return <AlertSquare {...iconProps} />;
+    case 'square':
+      return <Square {...iconProps} />;
+    case 'square-check':
+      return <SquareCheck {...iconProps} />;
+    case 'square-minus':
+      return <SquareMinus {...iconProps} />;
+    case 'square-off':
+      return <SquareOff {...iconProps} />;
   }
 };
