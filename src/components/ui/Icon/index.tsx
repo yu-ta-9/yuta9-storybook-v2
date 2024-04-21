@@ -38,7 +38,8 @@ export const Icon: FC<Props> = ({ name, size, colorType = 'dark' }) => {
     height: size,
     className: COLOR_CLASSES[colorType],
     'aria-hidden': true,
-    ['data-testid' as any]: name,
+    // HACK: data-testidを動的に設定するためにstringにキャストしている
+    ['data-testid' as string]: name,
   };
 
   switch (name) {

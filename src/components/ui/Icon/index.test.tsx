@@ -1,5 +1,6 @@
-import { Icon } from '@/components/ui/Icon';
 import { render, screen } from '@testing-library/react';
+
+import { Icon } from '@/components/ui/Icon';
 
 describe('Icon', () => {
   test('area-hidden="true"が設定されていること', () => {
