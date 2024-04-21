@@ -17,10 +17,17 @@ pnpm build-storybook # build
 
 ## Tech
 
+### Chore
+
 - React
 - TypeScript
 - CSS Modules
 - Storybook
+
+### Testing
+
+- vitest
+- testing-library
 
 ## Asset
 

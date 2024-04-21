@@ -25,3 +25,4 @@ dist-ssr
 
 # my custom
 *.css.d.ts
+coverage/
