@@ -15,5 +15,19 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: './vitest.setup.ts',
+    coverage: {
+      enabled: true,
+      provider: 'v8',
+      reporter: ['text', 'json', 'html'],
+      include: ['src/**'],
+      exclude: ['**/*.stories.tsx', '**/*.css.d.ts', 'src/components/ui/Icon/generated/**'],
+      // TODO: 後ほど調整する
+      // thresholds: {
+      //   statements: 80,
+      //   branches: 80,
+      //   functions: 80,
+      //   lines: 80,
+      // },
+    },
   },
 });
