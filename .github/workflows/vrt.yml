@@ -14,16 +14,22 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 20
-
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@master
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-1
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - uses: pnpm/action-setup@v3
+        name: Install pnpm
+        with:
+          version: 8
+          run_install: false
 
       - name: Get pnpm store directory
         shell: bash
