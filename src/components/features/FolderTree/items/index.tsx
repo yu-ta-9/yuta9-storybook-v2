@@ -1,9 +1,9 @@
 import { memo, type FC } from 'react';
 
-import { FileItem } from '@/components/FolderTree/items/File';
-import { FolderItem } from '@/components/FolderTree/items/Folder';
+import { FileItem } from '@/components/features/FolderTree/items/File';
+import { FolderItem } from '@/components/features/FolderTree/items/Folder';
 
-import type { Folder, File } from '@/components/FolderTree/common/type';
+import type { Folder, File } from '@/components/features/FolderTree/common/type';
 
 type Props = {
   type: 'folder' | 'file';
