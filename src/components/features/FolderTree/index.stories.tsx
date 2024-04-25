@@ -1,4 +1,4 @@
-import { FolderTree } from '.';
+import { FolderTree } from '@/components/features/FolderTree';
 
 import type { Meta, StoryObj } from '@storybook/react';
 

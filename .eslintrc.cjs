@@ -8,6 +8,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:storybook/recommended',
     'plugin:vitest/recommended',
+    'plugin:jsx-a11y/recommended',
     'prettier',
   ],
   ignorePatterns: ['dist', 'node_modules', 'public'],
@@ -21,6 +22,7 @@ module.exports = {
     'vitest',
     'jest-dom',
     'testing-library',
+    'jsx-a11y',
   ],
   rules: {
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
@@ -62,6 +64,8 @@ module.exports = {
     // vitest
     'vitest/consistent-test-it': ['error', { fn: 'test' }],
     'vitest/require-top-level-describe': ['error'],
+    // jsx-a11y
+    'jsx-a11y/control-has-associated-label': 'error',
   },
   overrides: [],
   settings: {
