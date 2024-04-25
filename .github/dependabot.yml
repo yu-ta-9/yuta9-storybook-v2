@@ -13,7 +13,7 @@ updates:
       time: '09:30'
       timezone: 'Asia/Tokyo'
     versioning-strategy: 'lockfile-only'
-    # open-pull-requests-limit: 10 # MEMO:要調整
+    open-pull-requests-limit: 10 # MEMO: デフォルトから引き上げる
     ignore:
       - dependency-name: 'storybook' # MEMO: 関連パッケージ全てでバージョンを揃える必要があるため手動で行う
         versions: ['7.x.x']
