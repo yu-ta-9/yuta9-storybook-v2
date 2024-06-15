@@ -10,7 +10,7 @@ type Props = {
   horizontalPosition: 'left' | 'right';
   verticalOffset?: number;
   horizontalOffset?: number;
-  areaLabel?: string;
+  'area-label'?: string;
 };
 
 export const MenuModalPortal: FC<Props> = ({
@@ -20,7 +20,7 @@ export const MenuModalPortal: FC<Props> = ({
   horizontalPosition,
   verticalOffset,
   horizontalOffset,
-  areaLabel,
+  'area-label': areaLabel,
 }) => {
   const { modalRef, modalId, position, cloneButtonElement, isOpen, handleClose } = useMenuModal({
     buttonElement,
