@@ -21,7 +21,7 @@ describe('MenuModalPortal', () => {
             <li>test2</li>
           </ul>
         }
-        label='Menu Test'
+        areaLabel='Menu Test'
         verticalPosition='top'
         horizontalPosition='left'
         verticalOffset={8}
@@ -48,7 +48,7 @@ describe('MenuModalPortal', () => {
             <li>test2</li>
           </ul>
         }
-        label='Menu Test'
+        areaLabel='Menu Test'
         verticalPosition='top'
         horizontalPosition='left'
         verticalOffset={8}
@@ -76,7 +76,7 @@ describe('MenuModalPortal', () => {
             <li>test2</li>
           </ul>
         }
-        label='Menu Test'
+        areaLabel='Menu Test'
         verticalPosition='top'
         horizontalPosition='left'
         verticalOffset={8}
