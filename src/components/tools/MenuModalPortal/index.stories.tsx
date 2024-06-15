@@ -32,7 +32,7 @@ export const TopAndLeft: Story = {
   args: {
     buttonElement: <Button type='button' theme='main' label='Open Menu Modal' />,
     menuElement: <MenuElementMock />,
-    label: 'Menu',
+    'area-label': 'Menu',
     verticalPosition: 'top',
     horizontalPosition: 'left',
     verticalOffset: 8,
@@ -44,7 +44,7 @@ export const BottomAndRight: Story = {
   args: {
     buttonElement: <Button type='button' theme='main' label='Open Menu Modal' />,
     menuElement: <MenuElementMock />,
-    label: 'Menu',
+    'area-label': 'Menu',
     verticalPosition: 'bottom',
     horizontalPosition: 'right',
     verticalOffset: 8,

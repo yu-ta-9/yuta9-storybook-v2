@@ -6,21 +6,21 @@ import type { FC, ReactElement, ReactNode } from 'react';
 type Props = {
   buttonElement: ReactElement;
   menuElement: ReactNode;
-  label: string;
   verticalPosition: 'top' | 'bottom';
   horizontalPosition: 'left' | 'right';
   verticalOffset?: number;
   horizontalOffset?: number;
+  'area-label'?: string;
 };
 
 export const MenuModalPortal: FC<Props> = ({
   buttonElement,
   menuElement,
-  label,
   verticalPosition,
   horizontalPosition,
   verticalOffset,
   horizontalOffset,
+  'area-label': areaLabel,
 }) => {
   const { modalRef, modalId, position, cloneButtonElement, isOpen, handleClose } = useMenuModal({
     buttonElement,
@@ -50,7 +50,7 @@ export const MenuModalPortal: FC<Props> = ({
               bottom: position.bottom,
               left: position.left,
             }}
-            aria-label={label}
+            aria-label={areaLabel}
             aria-hidden={!isOpen}
             aria-modal='true'
             id={modalId}
