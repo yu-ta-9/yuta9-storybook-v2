@@ -1,4 +1,6 @@
 :root {
   /* z-index */
   --z-index-toast: 9999;
+  --z-index-tooltip-overlay: 10000;
+  --z-index-tooltip: 10010;
 }
