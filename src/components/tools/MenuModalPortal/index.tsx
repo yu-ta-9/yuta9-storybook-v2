@@ -1,5 +1,5 @@
 import styles from '@/components/tools/MenuModalPortal/index.module.css';
-import { useMenuModal } from '@/components/tools/MenuModalPortal/useMenuModal.hook';
+import { useMenuModalPortal } from '@/components/tools/MenuModalPortal/useMenuModalPortal.hook';
 
 import type { FC, ReactElement, ReactNode } from 'react';
 
@@ -22,7 +22,7 @@ export const MenuModalPortal: FC<Props> = ({
   horizontalOffset,
   'area-label': areaLabel,
 }) => {
-  const { modalRef, modalId, position, cloneButtonElement, isOpen, handleClose } = useMenuModal({
+  const { modalRef, modalId, position, cloneButtonElement, isOpen, handleClose } = useMenuModalPortal({
     buttonElement,
     verticalPosition,
     horizontalPosition,

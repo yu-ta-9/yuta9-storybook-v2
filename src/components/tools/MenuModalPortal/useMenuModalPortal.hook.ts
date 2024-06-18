@@ -17,7 +17,7 @@ type Position = {
   left?: string;
 };
 
-export const useMenuModal = ({
+export const useMenuModalPortal = ({
   buttonElement,
   verticalPosition,
   horizontalPosition,
