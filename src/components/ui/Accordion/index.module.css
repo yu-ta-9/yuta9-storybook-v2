@@ -1,0 +1,23 @@
+.accordion {
+  > .button {
+    cursor: pointer;
+    background-color: initial;
+    border: 1px solid var(--color-main);
+    padding: var(--spacing-2) var(--spacing-4);
+    border-radius: var(--border-radius-2);
+
+    &:hover {
+      background-color: var(--color-main);
+      color: var(--color-white);
+    }
+  }
+
+  > .inner {
+    padding: var(--spacing-2) var(--spacing-4);
+    border: 1px solid var(--color-main);
+
+    &.hide {
+      display: none;
+    }
+  }
+}
