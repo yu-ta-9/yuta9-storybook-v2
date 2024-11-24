@@ -1,7 +1,7 @@
+import clsx from 'clsx';
 import { type ReactElement, useId, useState, type FC } from 'react';
 
 import styles from '@/components/ui/Accordion/index.module.css';
-import clsx from 'clsx';
 
 type Props = {
   label: string;
