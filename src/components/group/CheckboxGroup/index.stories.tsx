@@ -45,6 +45,7 @@ export const Default: Story = {
     required: false,
     errorMessage: '',
     direction: 'column',
+    onChange: () => {},
   },
   render: function Comp(args) {
     const [value, setValue] = useState<string[]>([]);
